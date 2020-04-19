@@ -36,7 +36,10 @@ Actual notebook file: `2_Plagiarism_Feature_Engineering.ipynb`
 * Create train/test `.csv` files that hold the relevant features and class labels for train/test data points.
 
 *Modifications or code completions I made:*
-* TBD
+* I tweaked the "download data" cell so it avoids downloading data multiple times if it was already done.
+* I completed the `numerical_dataframe` function (as requested by the exercise).
+* I completed the `calculate_containment`function (as requested by the exercise).
+* I answered the `Question 1`.
 
 **Notebook 3: Train and Deploy Your Model in SageMaker**
 
