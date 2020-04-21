@@ -38,8 +38,15 @@ Actual notebook file: `2_Plagiarism_Feature_Engineering.ipynb`
 *Modifications or code completions I made:*
 * I tweaked the "download data" cell so it avoids downloading data multiple times if it was already done.
 * I completed the `numerical_dataframe` function (as requested by the exercise).
-* I completed the `calculate_containment`function (as requested by the exercise).
-* I answered the `Question 1`.
+* I completed the `calculate_containment` function (as requested by the exercise).
+* I answered to `Question 1`.
+* I completed the `lcs_norm_word` function (as requested by the exercise).
+* I added a cell to display the heatmap for the correlation matrix (Correlated features).
+* I added my personal conclusion on the correlation matrix/heatmap (just before `EXERCISE: Create selected train/test data`).
+* I completed the `make_csv` function.
+* I answered to `Question 2` with a pretty long and detailed answer leading to...
+* ... a bonus exercise where I test the 3 options I made in question 2.
+
 
 **Notebook 3: Train and Deploy Your Model in SageMaker**
 
