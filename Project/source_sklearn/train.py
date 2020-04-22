@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.externals import joblib
 
 ## TODO: Import any additional libraries you need to define a model
-
+from sklearn.naive_bayes import GaussianNB
 
 # Provided model load function
 def model_fn(model_dir):
@@ -54,17 +54,19 @@ if __name__ == '__main__':
     
     ## --- Your code here --- ##
     
-
     ## TODO: Define a model 
-    model = None
-    
+    model = GaussianNB()
     
     ## TODO: Train the model
+    model.fit(train_x, train_y)
     
-    
+    # Make sure the ouput dir exists
+    os.makedirs(args.model_dir, exist_ok=True)
     
     ## --- End of your code  --- ##
     
 
     # Save the trained model
-    joblib.dump(model, os.path.join(args.model_dir, "model.joblib"))
+    output_file = os.path.join(args.model_dir, "model.joblib")
+    joblib.dump(model, output_file)
+    print("Model saved to {}".format(output_file))

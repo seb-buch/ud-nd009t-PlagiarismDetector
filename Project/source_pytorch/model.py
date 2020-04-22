@@ -27,7 +27,11 @@ class BinaryClassifier(nn.Module):
         super(BinaryClassifier, self).__init__()
 
         # define any initial layers, here
-        
+        self.input_layer = nn.Linear(input_features, hidden_dim)
+        self.dropout = nn.Dropout(0.2)
+        self.hidden_layer = nn.Linear(hidden_dim, output_dim)
+        self.output_layer = nn.Linear(output_dim, 1)
+        self.activation = nn.Sigmoid()
 
     
     ## TODO: Define the feedforward behavior of the network
@@ -40,5 +44,11 @@ class BinaryClassifier(nn.Module):
         
         # define the feedforward behavior
         
-        return x
+        a1 = self.input_layer(x)
+        dout = self.dropout(a1)
+        a2 = self.hidden_layer(dout)
+        a3 = self.output_layer(a2)
+        y = self.activation(a3.squeeze())
+        
+        return y
     
