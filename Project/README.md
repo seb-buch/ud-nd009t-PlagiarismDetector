@@ -9,11 +9,11 @@ This folder contains all the code needed for the project.
 
 In this project, the purpose is to build a plagiarism detector that examines a text file and performs binary classification; labeling that file as either *plagiarized* or *not*, depending on how similar that text file is to a provided source text.
 
-This project is broken down into three main notebooks:
+This project is broken down into three main notebooks, plus an additional one:
 
 **Notebook 1: Data Exploration**
 
-Actual notebook file: `1_Data_Exploration.ipynb`
+Notebook file: `1_Data_Exploration.ipynb`
 
 *Tasks done in this notebook:*
 * Load in the corpus of plagiarism text data.
@@ -27,7 +27,7 @@ Actual notebook file: `1_Data_Exploration.ipynb`
 
 **Notebook 2: Feature Engineering**
 
-Actual notebook file: `2_Plagiarism_Feature_Engineering.ipynb`
+Notebook file: `2_Plagiarism_Feature_Engineering.ipynb`
 
 *Tasks done in this notebook:*
 * Clean and pre-process the text data.
@@ -50,7 +50,7 @@ Actual notebook file: `2_Plagiarism_Feature_Engineering.ipynb`
 
 **Notebook 3: Train and Deploy Your Model in SageMaker**
 
-Actual notebook file: `3_Training_a_Model.ipynb`
+Notebook file: `3_Training_a_Model.ipynb`
 
 *Tasks done in this notebook:*
 * Upload your train/test feature data to S3.
@@ -60,3 +60,10 @@ Actual notebook file: `3_Training_a_Model.ipynb`
 
 *Modifications or code completions I made:*
 * TBD
+
+**Additional Notebook: Local testing and training**
+
+Notebook file: `3_Training_a_Model_locally.ipynb`
+
+*Tasks done in this notebook:*
+* Train and test models on local GPU workstation before running `3_Training_a_Model.ipynb` on AWS SageMaker.
