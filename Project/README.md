@@ -67,3 +67,4 @@ Notebook file: `3_Training_a_Model_locally.ipynb`
 
 *Tasks done in this notebook:*
 * Train and test models on local GPU workstation before running `3_Training_a_Model.ipynb` on AWS SageMaker.
+* Test train.py and predict.py for deployment on AWS

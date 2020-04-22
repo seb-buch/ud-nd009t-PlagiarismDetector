@@ -131,3 +131,4 @@ dmypy.json
 # Project related
 data/
 data.zip
+model/
