@@ -59,7 +59,13 @@ Notebook file: `3_Training_a_Model.ipynb`
 * Evaluate your deployed classifier.
 
 *Modifications or code completions I made:*
-* TBD
+* I completed the train.py, model.py and predict.py scripts for the Pytorch model
+* I completed the train.py for the sklearn model
+* I completed the cell to upload data to S3
+* I completed the estimator creation and training
+* I completed the model deployment
+* I completed the model evaluation
+
 
 **Additional Notebook: Local testing and training**
 
