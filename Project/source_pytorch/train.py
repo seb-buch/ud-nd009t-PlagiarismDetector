@@ -114,7 +114,7 @@ if __name__ == '__main__':
     # Do not need to change
     parser.add_argument('--output-data-dir', type=str, default=os.environ['SM_OUTPUT_DATA_DIR'])
     parser.add_argument('--model-dir', type=str, default=os.environ['SM_MODEL_DIR'])
-    parser.add_argument('--data-dir', type=str, default=os.environ['SM_CHANNEL_TRAIN'])
+    parser.add_argument('--data-dir', type=str, default=os.environ['SM_CHANNEL_TRAINING'])
     
     # Training Parameters, given
     parser.add_argument('--batch-size', type=int, default=10, metavar='N',
