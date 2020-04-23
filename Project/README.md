@@ -65,7 +65,9 @@ Notebook file: `3_Training_a_Model.ipynb`
 * I completed the estimator creation and training
 * I completed the model deployment
 * I completed the model evaluation
-
+* I answered `Question 1` and `Question 2`
+* I deployed my model on AWS for prediction
+* The model passes the accuracy test (100% accuracy on test data)
 
 **Additional Notebook: Local testing and training**
 
